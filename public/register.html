@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <title>Epytodo | Register</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/register.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Epytodo | SIGN IN</title>
+</head>
+
+<body>
+    <section class="section_register">
+        <div class="form_box">
+            <div class="form-value">
+                <form id="register_form" action="">
+                    <h2>SIGN IN</h2>
+                    <div class="input_box_fname">
+                        <img class="people_icon" src="img/icon_people.png" alt="people_icon">
+                        <input type="text" id="i_fname" required="required">
+                        <label for="">FIRSTNAME</label>
+                        <i></i>
+                    </div>
+                    <div class="input_box_name">
+                        <img class="people_icon2" src="img/icon_people.png" alt="people_icon">
+                        <input type="text" id="i_name" required="required">
+                        <label for="">NAME</label>
+                        <i></i>
+                    </div>
+                    <div class="input_box_email">
+                        <img class="email_icon" src="img/email.png" alt="email_icon">
+                        <input type="email" id="i_mail" required="required" oninput="updateLabel(this)">
+                        <label for="">EMAIL</label>
+                        <i></i>
+                    </div>
+                    <div class="input_box">
+                        <img class="img_lock" src="img/lock30px.png" alt="lock_icon">
+                        <input type="password" id="i_pass" required="required">
+                        <label for="">PASSWORD</label>
+                        <i></i>
+                    </div>
+                    <div class="button_bottom">
+                        <button id="submit-button" type="submit" value="Register" class="btn_register">SIGN IN</button>
+                    </div>
+                    <div class="login">
+                        <p> Already have an account <a href="../login">Login</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </section>
+</body>
+
+</html>
+<script src="./js/register.js"></script>
+<script src="./js/script_register.js"></script>

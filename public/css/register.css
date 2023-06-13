@@ -1,0 +1,464 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Red+Hat+Display:wght@600&display=swap');
+@import url('https://rsms.me/inter/inter-ui.css');
+
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-weight: 800;
+}
+
+.section_register {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        width: 100%;
+        background-color: #121213;
+}
+
+.form_box {
+        width: 750px;
+        border: 3px solid rgb(205, 205, 205);
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+}
+
+.form-value {
+        width: 100%;
+}
+
+.section_register .form_box .form-value h2 {
+        font-family: 'Inter UI', sans-serif;
+        letter-spacing: 3px;
+        font-size: 4em;
+        font-weight: bolder;
+        color: white;
+        text-align: center;
+        margin-bottom: 20px;
+}
+
+/*input firstname*/
+
+.input_box_fname {
+        position: relative;
+        width: 90%;
+        margin: 2vh 2vh;
+        margin-top: 50px;
+}
+
+.input_box_fname label{
+        font-family: 'Inter UI', sans-serif;
+        position: absolute;
+        left: 0px;
+        color: #fff;
+        font-size: 1.5em;
+        pointer-events: none;
+}
+
+.input_box_fname .input {
+        font-family: 'Red Hat Display', sans-serif;
+        width: 93%;
+        background: transparent;
+        border: none;
+        outline: none;
+        box-shadow: none;
+        font-size: 1.6em;
+        color: #fff;
+        resize: none;
+}
+
+.input_box_fname input:not(:focus) ~ label {
+        top: -33px;
+        color: #fff;
+}
+
+.input_box_fname input:not(:focus):not(:valid) ~ label {
+        top: 0px;
+        color: #fff;
+}
+
+.input_box_fname input:focus ~ label {
+        top: -33px;
+        color: #fff;
+}
+
+.input_box_fname i {
+        position: absolute;
+        margin-top: 50px;
+        width: 100%;
+        left: 0;
+        bottom: -5px;
+        height: 4px;
+        border-radius: 20px;
+        background: #fff;
+        overflow: hidden;
+}
+
+.input_box_fname i::before {
+        content: ' ';
+        position: absolute;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        /*background: linear-gradient(90deg, #333399,#2929b4, #00F1F7, #333399);*/
+        background: #01C3EA;
+        /*animation: animate 10s linear infinite;*/
+        transition: 0.5s;
+
+}
+
+.input_box_fname input:valid ~ i::before,
+.input_box_fname input:focus ~ i::before
+{
+        left: 0;
+}
+
+.input_box_fname .people_icon {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        width: 28px;
+}
+
+/*input box name*/
+
+.input_box_name {
+        position: relative;
+        width: 90%;
+        margin: 2vh 2vh;
+        margin-top: 50px;
+}
+
+.input_box_name label{
+        font-family: 'Inter UI', sans-serif;
+        position: absolute;
+        left: 0px;
+        color: #fff;
+        font-size: 1.5em;
+        pointer-events: none;
+}
+
+.input_box_name .input {
+        font-family: Arial, Helvetica, sans-serif;
+        width: 93%;
+        background: transparent;
+        font-size: 1.5vw;
+        border: none;
+        outline: none;
+        box-shadow: none;
+        color: #fff;
+        resize: none;
+}
+
+.input_box_name input:not(:focus) ~ label {
+        top: -33px;
+        color: #fff;
+}
+
+.input_box_name input:not(:focus):not(:valid) ~ label {
+        top: 0px;
+        color: #fff;
+}
+
+.input_box_name input:focus ~ label {
+        top: -33px;
+        color: #fff;
+}
+
+.input_box_name i {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        bottom: -5px;;
+        height: 4px;
+        border-radius: 20px;
+        background: #fff;
+        overflow: hidden;
+}
+
+.input_box_name i::before {
+        content: ' ';
+        position: absolute;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+       /*  background: linear-gradient(90deg, #333399,#2929b4, #00F1F7, #333399); */
+        background: #EF30B0;
+        /* animation: animate 10s linear infinite; */
+        transition: 0.5s;
+
+}
+
+.input_box_name input:valid ~ i::before,
+.input_box_name input:focus ~ i::before
+{
+        left: 0;
+}
+
+.input_box_name .people_icon2 {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        width: 28px;
+}
+
+/* input box for email */
+
+.input_box_email {
+        position: relative;
+        width: 90%;
+        margin: 2vh 2vh;
+        margin-top: 50px;
+}
+
+.input_box_email label{
+        font-family: 'Inter UI', sans-serif;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        color: #fff;
+        font-size: 1.5em;
+        pointer-events: none;
+}
+
+input {
+        width: 93%;
+        background: transparent;
+        border: none;
+        outline: none;
+        box-shadow: none;
+        font-size: 1.6em;
+        color: #fff;
+        resize: none;
+}
+
+.form_box .input_box_email i {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        bottom: -5px;;
+        height: 4px;
+        border-radius: 20px;
+        background: #fff;
+        overflow: hidden;
+}
+
+.input_box_email label.active {
+        top: -33px;
+        color: #fff;
+}
+
+.input_box_email input:focus ~ label {
+        top: -33px;
+        color: #fff;
+}
+
+.input_box_email i::before {
+        content: '';
+        position: absolute;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: #FD6C0C;
+       /*  background: linear-gradient(90deg, #333399,#2929b4, #00F1F7, #333399); */
+        /* animation: animate 10s linear infinite; */
+        transition: 0.5s;
+
+}
+
+.input_box_email label.active ~ i::before {
+        left: 0;
+}
+
+.input_box_email input:focus ~ i::before {
+        left: 0;
+}
+
+.input_box_email .email_icon
+{
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        width: 25px;
+}
+
+/*input box for password */
+
+.input_box {
+        position: relative;
+        width: 90%;
+        margin: 2vh 2vh;
+        margin-top: 50px;
+}
+
+.input_box label {
+        font-family: 'Inter UI', sans-serif;
+        position: absolute;
+        left: 0px;
+        color: #fff;
+        font-size: 1.5em;
+        pointer-events: none;
+}
+
+.input_box input {
+        width: 93%;
+        background: transparent;
+        border: none;
+        outline: none;
+        box-shadow: none;
+        font-size: 1.6em;
+        color: #fff;
+        resize: none;
+}
+
+.input_box input:not(:focus) ~ label {
+        top: -33px;
+        color: #fff;
+}
+
+.input_box input:not(:focus):not(:valid) ~ label {
+        top: 0px;
+        color: #fff;
+}
+
+.input_box input:focus ~ label {
+        top: -33px;
+        color: #fff;
+}
+
+.form_box .input_box i {
+        position: absolute;
+        width: calc(100%);
+        left: 0;
+        bottom: -5px;;
+        height: 4px;
+        border-radius: 20px;
+        background: #fff;
+        overflow: hidden;
+}
+
+.input_box i::before {
+        content: ' ';
+        position: absolute;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: #f6c635;
+       /*  background: linear-gradient(90deg, #333399,#2929b4, #00F1F7, #333399);
+        animation: animate 10s linear infinite; */
+        transition: 0.5s;
+
+}
+.input_box input:valid ~ i::before,
+.input_box input:focus ~ i::before
+{
+        left: 0;
+}
+
+.input_box .img_lock {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        width: 25px;
+}
+
+/* button register */
+
+.button_bottom .btn_register{
+        width: 100%;
+        height: 80px;
+        font-family: 'Inter UI', sans-serif;
+        border-color: transparent;
+        letter-spacing: 2px ;
+        background: transparent;
+        color: #fff;
+        cursor: pointer;
+        font-size: 2em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+}
+
+.button_bottom .btn_register::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 0;
+        height: 0;
+        border-top: 2px solid white;
+        border-right: 2px solid white;
+        animation: border-top-right 8s infinite alternate;
+
+}
+
+.button_bottom .btn_register::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 0;
+        height: 0;
+        border-bottom: 2px solid white;
+        border-left: 2px solid white;
+        animation: border-bottom-left 8s infinite alternate;
+}
+
+/* login */
+
+.login {
+        font-family:'Red Hat Display', sans-serif;
+        font-size: 1.5em;
+        color: #fff;
+        text-align: center;
+        margin:  25px 0 10px;
+}
+
+.login a  {
+        color: #01C3EA;
+        text-decoration: none;
+        position: relative;
+}
+
+.login a:hover {
+        text-decoration: underline;
+}
+
+/*animate*/
+
+@keyframes animate {
+        0%
+        {background-position-x: 0vw;}
+        25%
+        {background-position-x: 100vw;}
+        75%
+        {background-position-x: 0vw;}
+        100%
+        {background-position-x: 100vw;}
+}
+
+@keyframes animate_btn {
+        0% {background-position-x: 0;}
+        100% {background-position-x: 600px;}
+}
+
+@keyframes border-top-right {
+        0%   {width: 0px; height: 0px;}
+        25%  {width: 100%; height: 0px;}
+        50%  {width: 100%; height: 74px;}
+        100% {width: 100%; height: 74px;}
+}
+
+@keyframes border-bottom-left {
+        0%   {width: 0px; height: 0px; opacity: 0;}
+        50%  {width: 0px; height: 0px; opacity: 0;}
+        50.1%  {width: 0px; height: 0px; opacity: 1;}
+        75%  {width: 100%; height: 0px;opacity: 1;}
+        100% {width: 100%; height: 74px;opacity: 1;}
+}

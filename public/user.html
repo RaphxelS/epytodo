@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/user.css">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <title>Epytodo | My Project</title>
+</head>
+
+<body>
+    <div class="user_interface">
+        <div class="header_1">
+            <h1>MY PROJECT</h1>
+            <span id="email_txt" class="email_text"> The email need to be here</span>
+            <img class="people_icon2" src="img/email.png" alt="people_icon">
+            <button class="btn_leave" onclick="logout()">
+                <span>Log out</span>
+                <img class="leave" src="img/leave.png" alt="people_icon">
+            </button>
+        </div>
+        <div class="add_todo">
+            <form id="add_form" class="form_user" action="">
+                <div class="input_user">
+                    <input id="i_tadd_title" class="a_title" type="text" placeholder="Title" required="required">
+                    <input id="d_ttime" class="a_time" type="date" required="required">
+                    <select id="t_topt" class="a_topt" required="required">
+                        <option value="not started">Not Started</option>
+                        <option value="todo">Todo</option>
+                        <option value="in progress">In Progress</option>
+                        <option value="done">Done</option>
+                    </select>
+                    <select id="t_tuser" class="s_user" required="required"></select>
+                    <input id="submit-button" class="s_button" type="submit" value="Save">
+                </div>
+                <div class="description">
+                    <input id="i_tadd_desc" class="a_d" type="text" placeholder="Description" required="required">
+                </div>
+            </form>
+        </div>
+        <div class="d_user">
+            <h1 class="header">Users</h1>
+            <div class="table_user">
+                <table id="user_lst">
+                    <tr>
+                        <th class="name">Name</th>
+                        <th class="fname">First Name</th>
+                        <th class="email">Email</th>
+                        <th class="action">Action</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="d_todo">
+            <h1 class="header">Task List</h1>
+            <div class="todo_list">
+                <table id="todo_lst">
+                    <tr>
+                        <th class="title">Title</th>
+                        <th class="desc">Description</th>
+                        <th class="st_dy">Start Date</th>
+                        <th class="due_dt">Due Date</th>
+                        <th class="usr">User</th>
+                        <th class="status">Status</th>
+                        <th class="action">Action</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="./js/user.js"></script>

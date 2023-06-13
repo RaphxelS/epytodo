@@ -1,0 +1,455 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Red+Hat+Display:wght@600&display=swap');
+@import url('https://rsms.me/inter/inter-ui.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    background: #121213;
+}
+
+.user_interface {
+    font-family: 'Inter UI', sans-serif;
+    ;
+    color: white;
+    font-size: 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+}
+
+/*header*/
+.user_interface .header_1 {
+    width: 1900px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user_interface .header_1 .email_text {
+    display: flex;
+    align-items: center;
+    box-shadow: none;
+    cursor: pointer;
+    border: none;
+    align-items: right;
+    margin-left: 25vw;
+    outline: hidden;
+}
+
+.user_interface .header_1 span {
+    margin-left: 45vw;
+    font-size: 1vw;
+    color: white;
+}
+
+.user_interface .header_1 .people_icon2 {
+    margin-left: 1vw;
+    padding-top: 2px;
+    width: 1vw;
+}
+
+.user_interface .header_1 h1 {
+    color: white;
+    font-size: 4vw;
+    padding-top: 10px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.user_interface .header_1 .btn_leave {
+    display: flex;
+    align-items: center;
+    box-shadow: none;
+    cursor: pointer;
+    border: none;
+    outline: hidden;
+}
+
+.user_interface .header_1 .btn_leave span {
+    font-size: 1vw;
+    color: #01C3EA;
+    margin-right: 10px;
+    margin-left: 3vw;
+}
+
+.user_interface .header_1 .leave {
+    outline: hidden;
+    box-shadow: none;
+    margin-top: 2px;
+    width: 1vw;
+}
+
+/*add todo*/
+
+.user_interface .add_todo {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.user_interface .add_todo .form_user {
+    width: 100%;
+}
+
+.user_interface .add_todo .form_user .input_user {
+    width: 100%;
+    font-size: 0.5vw;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.user_interface .add_todo .form_user .input_user .a_title {
+    border: 2px solid white;
+    width: 40%;
+    text-indent: 15px;
+    margin-top: 35px;
+    border-color: #01C3EA;
+    border-radius: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 20px;
+    font-size: 0.8vw;
+    background: transparent;
+    outline: none;
+    color: white;
+    box-shadow: none;
+}
+
+.user_interface .add_todo .form_user .a_time {
+    border: 2px solid white;
+    width: 15%;
+    text-indent: 15px;
+    margin-top: 35px;
+    border-color: #EF30B0;
+    border-radius: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 20px;
+    font-size: 0.8vw;
+    background: transparent;
+    outline: none;
+    color: white;
+    box-shadow: none;
+}
+
+.user_interface .add_todo .form_user .a_topt {
+    border: 2px solid white;
+    width: 15%;
+    text-indent: 15px;
+    margin-top: 35px;
+    border-color: #FD6C0C;
+    border-radius: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 20px;
+    font-size: 0.8vw;
+    background: transparent;
+    outline: none;
+    color: white;
+    box-shadow: none;
+}
+
+.user_interface .add_todo .form_user .s_user {
+    border: 2px solid white;
+    width: 25%;
+    text-indent: 15px;
+    margin-top: 35px;
+    border-color: #f6c635;
+    border-radius: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 20px;
+    font-size: 0.8vw;
+    background: transparent;
+    outline: none;
+    color: white;
+    box-shadow: none;
+}
+
+
+.s_button {
+    border: 2px solid #11e82a;
+    width: 10%;
+    text-indent: 15px;
+    margin-top: 35px;
+    cursor: pointer;
+    border-radius: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 20px;
+    font-size: 0.8vw;
+    background: transparent;
+    outline: none;
+    color: white;
+    box-shadow: none;
+}
+
+.d_button {
+    border: 2px solid #ca0f0f;
+    cursor: pointer;
+    font-size: 0.8vw;
+    background: transparent;
+    text-indent: 15px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 20px;
+    border-radius: 20px;
+    outline: none;
+    color: white;
+    box-shadow: none;
+}
+
+.user_interface .add_todo .form_user .description {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user_interface .add_todo .form_user .description .a_d {
+    border: 2px solid white;
+    width: 100%;
+    text-indent: 15px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    border-color: white;
+    border-radius: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 20px;
+    font-size: 0.8vw;
+    background: transparent;
+    outline: none;
+    color: white;
+    box-shadow: none;
+}
+
+/*USER TABLE*/
+
+.user_interface .d_user {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.user_interface .d_user h1.header {
+    padding-top: 50px;
+    font-size: 2.5vw;
+}
+
+.user_interface .d_user .table_user {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.user_interface .d_user .table_user table {
+    width: 100%;
+    padding-top: 30px;
+    border-spacing: 0px;
+}
+
+.user_interface .d_user .table_user .name {
+    border: 2px solid white;
+    width: 40%;
+    text-indent: 15px;
+    margin-top: 30px;
+    border-color: #01C3EA;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 20px;
+    font-size: 1vw;
+    background: transparent;
+    outline: none;
+    color: white;
+    box-shadow: none;
+}
+
+.user_interface .d_user .table_user .fname {
+    border: 2px solid white;
+    width: 40%;
+    text-indent: 15px;
+    margin-top: 30px;
+    border-color: #01C3EA;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 20px;
+    font-size: 1vw;
+    background: transparent;
+    outline: none;
+    color: white;
+    box-shadow: none;
+}
+
+.user_interface .d_user .table_user .email {
+    border: 2px solid white;
+    width: 40%;
+    text-indent: 15px;
+    margin-top: 30px;
+    border-color: #01C3EA;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 20px;
+    font-size: 1vw;
+    background: transparent;
+    outline: none;
+    color: white;
+    box-shadow: none;
+}
+
+.user_interface .d_user .table_user .action {
+    border: 2px solid white;
+    width: 40%;
+    text-indent: 15px;
+    margin-top: 30px;
+    border-color: #01C3EA;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 20px;
+    font-size: 1vw;
+    background: transparent;
+    outline: none;
+    color: white;
+    box-shadow: none;
+}
+
+/*Task list*/
+
+.user_interface .d_todo {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.user_interface .d_todo h1.header {
+    padding-top: 50px;
+    font-size: 2.5vw;
+}
+
+.user_interface .d_todo .todo_list {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.user_interface .d_todo .todo_list table {
+    width: 100%;
+    table-layout: auto;
+    min-width: 200px;
+    overflow-wrap: break-word;
+    padding-top: 30px;
+    border-spacing: 0px;
+}
+
+.user_interface .d_todo .todo_list .title {
+    border: 2px solid #01C3EA;
+    width: 20%;
+    text-indent: 15px;
+    margin-top: 30px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    padding-right: 20px;
+    font-size: 0.7vw;
+    background: transparent;
+    outline: none;
+    color: white;
+    box-shadow: none;
+}
+
+.user_interface .d_todo .todo_list .desc {
+    border: 2px solid #01C3EA;
+    width: 40%;
+    text-indent: 15px;
+    margin-top: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 20px;
+    font-size: 0.7vw;
+    background: transparent;
+    outline: none;
+    color: white;
+    box-shadow: none;
+}
+
+.user_interface .d_todo .todo_list .st_dy {
+    border: 2px solid #01C3EA;
+    width: 10%;
+    text-indent: 15px;
+    margin-top: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 20px;
+    font-size: 0.7vw;
+    background: transparent;
+    outline: none;
+    color: white;
+    box-shadow: none;
+}
+
+.user_interface .d_todo .todo_list .due_dt {
+    border: 2px solid #01C3EA;
+    width: 10%;
+    text-indent: 15px;
+    margin-top: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 20px;
+    font-size: 0.7vw;
+    background: transparent;
+    outline: none;
+    color: white;
+    box-shadow: none;
+}
+
+.user_interface .d_todo .todo_list .usr {
+    border: 2px solid #01C3EA;
+    width: 10%;
+    text-indent: 15px;
+    margin-top: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 20px;
+    font-size: 0.7vw;
+    background: transparent;
+    outline: none;
+    color: white;
+    box-shadow: none;
+}
+
+.user_interface .d_todo .todo_list .status {
+    border: 2px solid #01C3EA;
+    width: 10%;
+    text-indent: 15px;
+    margin-top: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 20px;
+    font-size: 0.7vw;
+    background: transparent;
+    outline: none;
+    color: white;
+    box-shadow: none;
+}
+
+.user_interface .d_todo .todo_list .action {
+    border: 2px solid #01C3EA;
+    width: 30%;
+    text-indent: 15px;
+    margin-top: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 20px;
+    font-size: 0.7vw;
+    background: transparent;
+    outline: none;
+    color: white;
+    box-shadow: none;
+}

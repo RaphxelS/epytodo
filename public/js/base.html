@@ -1,0 +1,56 @@
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/user.css">
+        <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+        <title>Epytodo | Management</title>
+</head>
+
+<body>
+        <div class="add_todo">
+                <h1>Add Todo</h1>
+                <form id="add_form" action="">
+                        <input id="i_tadd_title" type="text" placeholder="Title" required>
+                        <input id="i_tadd_desc" type="text" placeholder="Description" required>
+                        <input id="d_ttime" type="date" required>
+                        <select id="t_topt" required>
+                                <option value="not started">Not Started</option>
+                                <option value="todo">Todo</option>
+                                <option value="in progress">In Progress</option>
+                                <option value="done">Done</option>
+                        </select>
+                        <select id="t_tuser" required>
+                        </select>
+                        <input id="submit-button" class="button" type="submit" value="Save">
+                </form>
+        </div>
+        <h1>Users</h1>
+        <div class="d_user">
+                <table id="user_lst">
+                        <tr>
+                                <th>Name</th>
+                                <th>First Name</th>
+                                <th>Email</th>
+                                <th>Action</th>
+                        </tr>
+                </table>
+        </div>
+        <h1>Task List</h1>
+        <div class="d_todo">
+                <table id="todo_lst">
+                        <tr>
+                                <th>Title</th>
+                                <th>Description</th>
+                                <th>Start Date</th>
+                                <th>Due Date</th>
+                                <th>User</th>
+                                <th>Status</th>
+                                <th>Action</th>
+                        </tr>
+                </table>
+        </div>
+</body>
+
+</html>
+<script src="./js/user.js"></script>

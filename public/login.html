@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/login.css">
+        <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+        <title>Epytodo | Login</title>
+</head>
+
+<body>
+        <section class="section_register">
+                <div class="form_box">
+                        <div class="form-value">
+                                <form id="login_form" action="">
+                                        <h2>LOG IN</h2>
+                                        <div class="input_box_email">
+                                                <img class="email_icon" src="img/email.png" alt="email_icon">
+                                                <input type="email" id="i_mail" required="required"
+                                                        oninput="updateLabel(this)">
+                                                <label for="">EMAIL</label>
+                                                <i></i>
+                                        </div>
+                                        <div class="input_box">
+                                                <img class="img_lock" src="img/lock30px.png" alt="lock_icon">
+                                                <input type="password" id="i_pass" required="required">
+                                                <label for="">PASSWORD</label>
+                                                <i></i>
+                                        </div>
+                                        <div class="button_bottom">
+                                                <button class="btn_signin">LOG IN</button>
+                                        </div>
+                                        <div class="sign_in">
+                                                <p>Don't have an account <a href="../register">Sign in</a></p>
+                                        </div>
+                                </form>
+                        </div>
+                </div>
+        </section>
+</body>
+
+</html>
+<script src="./js/login.js"></script>
+<script src="./js/script_register.js"></script>
